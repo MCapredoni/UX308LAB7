@@ -1,4 +1,4 @@
-import {hello} from './functions.js';
+import {hello, SQFeet2Acres} from './functions.js';
 
 function Question1(){
     return <section>
@@ -10,4 +10,14 @@ function Question1(){
     </section>;
 }
 
-export {Question1}
+function Question2(){
+    return <section>
+2. Write a function that converts square feet to acres.
+<h2>results</h2>
+<p>SQFeet2Acres(1000000) == "{SQFeet2Acres(1000000)}"</p>
+<p>SQFeet2Acres(1250000) == "{SQFeet2Acres(1250000)}"</p>
+<p>SQFeet2Acres(35000000) == "{SQFeet2Acres(35000000)}"</p>
+    </section>
+}
+
+export {Question1, Question2}
