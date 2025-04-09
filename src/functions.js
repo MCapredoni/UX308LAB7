@@ -7,4 +7,10 @@ function SQFeet2Acres(SQFeet){
     return Acres;
 }
 
-export {hello, SQFeet2Acres}
+function convertLawnSize(length, width, metres_cut_per_minute){
+    const metres = length * width;
+    const minutes = metres /metres_cut_per_minute;
+    return minutes;
+}
+
+export {hello, SQFeet2Acres, convertLawnSize}

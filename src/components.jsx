@@ -1,4 +1,4 @@
-import {hello, SQFeet2Acres} from './functions.js';
+import {hello, SQFeet2Acres, convertLawnSize} from './functions.js';
 
 function Question1(){
     return <section>
@@ -20,4 +20,14 @@ function Question2(){
     </section>
 }
 
-export {Question1, Question2}
+function Question3(){
+    return <section>
+3. Write a function that converts lawn size to time needed to cut lawn.
+<h2>results</h2>
+<p>convertLawnSize(25, 30, 30) == "{convertLawnSize(25, 30, 30)}"</p>
+<p>convertLawnSize(50, 50, 40) == "{convertLawnSize(50, 50, 40)}"</p>
+<p>convertLawnSize(35, 45, 30) == "{convertLawnSize(35, 45, 30)}"</p>
+    </section>
+}
+
+export {Question1, Question2, Question3}
