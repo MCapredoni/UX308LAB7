@@ -7,10 +7,31 @@ function SQFeet2Acres(SQFeet){
     return Acres;
 }
 
-function convertLawnSize(length, width, metres_cut_per_minute){
+function LawnSize(length, width, metres_cut_per_minute){
     const metres = length * width;
     const minutes = metres /metres_cut_per_minute;
     return minutes;
 }
 
-export {hello, SQFeet2Acres, convertLawnSize}
+function AirQualityIndex(air){
+    if(air <= 50){
+        return "Good";
+        }
+        if(air <= 100){
+        return "Moderate";
+        }
+        if(air <= 150){
+        return "Unhealthy for Sensitive Groups";
+        }
+        if(air <= 200){
+        return "Unhealthy";
+        }
+        if(air <= 300){
+        return "Very Unhealthy";
+        }
+        if(air >= 301){
+        return "Hazardous";
+         }
+    } 
+        
+export {hello, SQFeet2Acres, LawnSize, AirQualityIndex}

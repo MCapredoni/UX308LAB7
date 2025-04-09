@@ -1,4 +1,4 @@
-import {hello, SQFeet2Acres, convertLawnSize} from './functions.js';
+import {hello, SQFeet2Acres, LawnSize, AirQualityIndex} from './functions.js';
 
 function Question1(){
     return <section>
@@ -24,10 +24,23 @@ function Question3(){
     return <section>
 3. Write a function that converts lawn size to time needed to cut lawn.
 <h2>results</h2>
-<p>convertLawnSize(25, 30, 30) == "{convertLawnSize(25, 30, 30)}"</p>
-<p>convertLawnSize(50, 50, 40) == "{convertLawnSize(50, 50, 40)}"</p>
-<p>convertLawnSize(35, 45, 30) == "{convertLawnSize(35, 45, 30)}"</p>
+<p>LawnSize(25, 30, 30) == "{LawnSize(25, 30, 30)}"</p>
+<p>LawnSize(50, 50, 40) == "{LawnSize(50, 50, 40)}"</p>
+<p>LawnSize(35, 45, 30) == "{LawnSize(35, 45, 30)}"</p>
     </section>
 }
 
-export {Question1, Question2, Question3}
+function Question4(){
+    return <section>
+4. Write a function that converts air quality to an index air type.
+<h2>results</h2>
+<p>AirQualityIndex(22) == "{AirQualityIndex(22)}"</p>
+<p>AirQualityIndex(58) == "{AirQualityIndex(58)}"</p>
+<p>AirQualityIndex(111) == "{AirQualityIndex(111)}"</p>
+<p>AirQualityIndex(158) == "{AirQualityIndex(158)}"</p>
+<p>AirQualityIndex(271) == "{AirQualityIndex(271)}"</p>
+<p>AirQualityIndex(500) == "{AirQualityIndex(500)}"</p>
+    </section>
+}
+
+export {Question1, Question2, Question3, Question4}
