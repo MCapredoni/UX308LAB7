@@ -1,4 +1,4 @@
-import {hello, SQFeet2Acres, LawnSize, AirQualityIndex} from './functions.js';
+import {hello, SQFeet2Acres, LawnSize, AirQualityIndex, YeeHa} from './functions.js';
 
 function Question1(){
     return <section>
@@ -43,4 +43,15 @@ function Question4(){
     </section>
 }
 
-export {Question1, Question2, Question3, Question4}
+function Question5(){
+    return <section>
+5. Write a function that converts the integer with a few responses.
+<h2>results</h2>
+<p>YeeHa(3) == "{YeeHa(3)}"</p>
+<p>YeeHa(7) == "{YeeHa(7)}"</p>
+<p>YeeHa(21) == "{YeeHa(21)}"</p>
+<p>YeeHa(100) == "{YeeHa(100)}"</p>
+    </section>
+}
+
+export {Question1, Question2, Question3, Question4, Question5}

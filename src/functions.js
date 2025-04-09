@@ -33,5 +33,21 @@ function AirQualityIndex(air){
         return "Hazardous";
          }
     } 
+
+    function YeeHa(integer){
+        if(integer % 3 === 0){
+        return "Yee";
+        }
+        if(integer % 7 === 0){
+        return "Ha";
+        }
+        if(integer % 3 === 0 && integer % 7 === 0){
+        return "YeeHa";
+        }
+        else{
+            return "Nada";
+        }
+          
+    }  
         
-export {hello, SQFeet2Acres, LawnSize, AirQualityIndex}
+export {hello, SQFeet2Acres, LawnSize, AirQualityIndex, YeeHa}
